@@ -16,7 +16,6 @@ type Resp struct {
     Fruits []string `json:"fruits"`
 }
 
-// func(*RPC) Echo(arg *string, result *Resp) error {
 func(*RPC) Echo(arg *string, result *interface{}) error {
     m := map[string]int {
         "a": 1,
